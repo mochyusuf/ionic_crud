@@ -1,14 +1,33 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="danger">
     <ion-title>
-      Ionic Blank
+      Ionic CRUD
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-list >
+    <ion-item>
+      <ion-label fixed >Name</ion-label>
+      <ion-input type="text" class="ion-input" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed >Phone Number</ion-label>
+      <ion-input type="telp" class="ion-input" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Gender</ion-label>
+      <ion-select>
+        <ion-option value="male">Male</ion-option>
+        <ion-option value="female">Female</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <div padding>
+    <button ion-button color="danger" block>Submit</button>
+  </div>
 </ion-content>
