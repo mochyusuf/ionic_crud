@@ -10,17 +10,17 @@
   <ion-list >
     <ion-item>
       <ion-label fixed >Name</ion-label>
-      <ion-input type="text" class="ion-input" value=""></ion-input>
+      <ion-input type="text" class="ion-input" value="" [(ngModel)]="name"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label fixed >Phone Number</ion-label>
-      <ion-input type="telp" class="ion-input" value=""></ion-input>
+      <ion-input type="telp" class="ion-input" value="" [(ngModel)]="phone_number"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label>Gender</ion-label>
-      <ion-select>
+      <ion-select [(ngModel)]="gender">
         <ion-option value="male">Male</ion-option>
         <ion-option value="female">Female</ion-option>
       </ion-select>
@@ -28,6 +28,6 @@
   </ion-list>
 
   <div padding>
-    <button ion-button color="danger" block>Submit</button>
+    <button ion-button color="danger" block (click)="Add()">Submit</button>
   </div>
 </ion-content>
