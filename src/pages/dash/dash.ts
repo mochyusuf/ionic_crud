@@ -51,8 +51,10 @@ export class DashPage {
     this.navCtrl.push(HomePage);
   }
 
-  show_data(id){
-
+  show_data(user){
+    this.navCtrl.push('ShowPage',{
+      'user' : user
+    })
   }
 
   update_data(user){
